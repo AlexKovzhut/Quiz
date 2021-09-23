@@ -25,8 +25,8 @@ class ResultVC: UIViewController {
 }
 
 extension ResultVC {
-    private func calculateResult() -> AnimalType? {
-        var frequencyOfAnimals: [AnimalType: Int] = [:]
+    private func calculateResult() -> HeroType? {
+        var frequencyOfAnimals: [HeroType: Int] = [:]
         let animals = answers.map { $0.type }
         
         for animal in animals {
@@ -41,8 +41,8 @@ extension ResultVC {
         return mostFrequencyAnimal
     }
     
-    private func updateUI(with animal: AnimalType?) {
-        resultTitle.text = "Вы - \(animal?.rawValue ?? "?")!"
+    private func updateUI(with animal: HeroType?) {
+        resultTitle.text = "You - \(animal?.rawValue ?? "?")!"
         resultBody.text = animal?.definition ?? ""
     }
 }

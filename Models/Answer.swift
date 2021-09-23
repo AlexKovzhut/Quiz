@@ -7,5 +7,5 @@
 
 struct Answer {
     let title: String
-    let type: AnimalType
+    let type: HeroType
 }

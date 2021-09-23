@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,19 +14,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ1-U4-SZd">
-                                <rect key="frame" x="119" y="280.5" width="137" height="39"/>
+                                <rect key="frame" x="137" y="350.33333333333331" width="101" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Начать опрос"/>
+                                <state key="normal" title="Start Quiz!"/>
                                 <connections>
                                     <segue destination="1yq-5g-DpE" kind="presentation" modalPresentationStyle="fullScreen" id="6Wn-ZK-tHx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое вы животное?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-ni-BDv">
-                                <rect key="frame" x="106" y="211.5" width="163" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which superhero are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-ni-BDv">
+                                <rect key="frame" x="106" y="281.33333333333331" width="163" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,72 +52,62 @@
             <objects>
                 <viewController id="RpN-Ty-qCw" customClass="QuestionsVC" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oba-3o-NpA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q3Y-r7-zxE">
-                                <rect key="frame" x="0.0" y="96" width="375" height="4"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="4"/>
                                 <color key="progressTintColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Любите ли вы поездки в машине?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKT-Qk-XLD">
-                                <rect key="frame" x="25" y="115" width="325" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any questions?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKT-Qk-XLD">
+                                <rect key="frame" x="15" y="159" width="345" height="18.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Trebuchet-BoldItalic" family="Trebuchet MS" pointSize="16"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-SB-f4X">
-                                <rect key="frame" x="25" y="234" width="325" height="219"/>
+                                <rect key="frame" x="25" y="334" width="325" height="158"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMw-ng-0VA">
-                                        <rect key="frame" x="130.5" y="0.0" width="64" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMw-ng-0VA" userLabel="Question">
+                                        <rect key="frame" x="119" y="0.0" width="87" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="P7p-ZG-i9o"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrb-NS-CIM">
-                                        <rect key="frame" x="130.5" y="61" width="64" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrb-NS-CIM" userLabel="Question">
+                                        <rect key="frame" x="119" y="61" width="87" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="x7q-YF-de8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-KV-2ei">
-                                        <rect key="frame" x="130.5" y="122" width="64" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-KV-2ei" userLabel="Question">
+                                        <rect key="frame" x="119" y="122" width="87" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="q3B-Sz-dsv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHE-8L-OCM">
-                                        <rect key="frame" x="130.5" y="183" width="64" height="36"/>
-                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="FeE-hy-ysq"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PRb-EK-ugn">
-                                <rect key="frame" x="60" y="234" width="255" height="257"/>
+                                <rect key="frame" x="60" y="270" width="255" height="332"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pn-qg-Oww">
                                         <rect key="frame" x="0.0" y="0.0" width="255" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-v9-t4g">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxL-v9-t4g" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="206" height="31"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -133,7 +123,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-rt-o3R">
                                         <rect key="frame" x="0.0" y="56" width="255" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQk-uJ-l6M">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQk-uJ-l6M" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="206" height="31"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -148,7 +138,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kp3-Kz-2vC">
                                         <rect key="frame" x="0.0" y="112" width="255" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKJ-Yq-sUn">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKJ-Yq-sUn" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="206" height="31"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -163,7 +153,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-od-xs7">
                                         <rect key="frame" x="0.0" y="168" width="255" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvw-Md-wPM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvw-Md-wPM" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="206" height="31"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -176,9 +166,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usF-aT-Ya3">
-                                        <rect key="frame" x="0.0" y="224" width="255" height="33"/>
+                                        <rect key="frame" x="0.0" y="224" width="255" height="108"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="18"/>
-                                        <state key="normal" title="Ответить">
+                                        <state key="normal" title="Next">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -188,7 +178,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jtG-Hz-y86">
-                                <rect key="frame" x="40" y="311" width="295" height="103"/>
+                                <rect key="frame" x="40" y="384.66666666666669" width="295" height="103"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RkW-bt-8jA">
                                         <rect key="frame" x="-2" y="0.0" width="299" height="32"/>
@@ -199,13 +189,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="217" translatesAutoresizingMaskIntoConstraints="NO" id="Lg0-4G-Qrp">
                                         <rect key="frame" x="0.0" y="36" width="295" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="azk-BM-h0c">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="azk-BM-h0c" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="31"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y2p-8w-gio">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y2p-8w-gio" userLabel="Question">
                                                 <rect key="frame" x="256" y="0.0" width="39" height="31"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,7 +206,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-Fw-Dvx">
                                         <rect key="frame" x="0.0" y="72" width="295" height="31"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="16"/>
-                                        <state key="normal" title="Ответить">
+                                        <state key="normal" title="Final">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -225,9 +215,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-P3-wR4">
-                                <rect key="frame" x="154" y="544" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZL-P3-wR4">
+                                <rect key="frame" x="154" y="655" width="67" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SIK-eo-C3h"/>
+                                </constraints>
                                 <state key="normal" title=" Переход">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -239,12 +231,15 @@
                         <viewLayoutGuide key="safeArea" id="I3h-kI-99m"/>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="I3h-kI-99m" firstAttribute="bottom" secondItem="GZL-P3-wR4" secondAttribute="bottom" constant="93" id="05T-Sx-6SB"/>
+                            <constraint firstItem="GZL-P3-wR4" firstAttribute="top" secondItem="PRb-EK-ugn" secondAttribute="bottom" constant="53" id="3n5-yf-GY9"/>
                             <constraint firstItem="q3Y-r7-zxE" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" id="Cf4-do-D2W"/>
+                            <constraint firstItem="GZL-P3-wR4" firstAttribute="centerX" secondItem="jtG-Hz-y86" secondAttribute="centerX" id="D2r-h5-bXh"/>
                             <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="k1D-SB-f4X" secondAttribute="trailing" constant="25" id="Ee9-JL-Din"/>
-                            <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="CKT-Qk-XLD" secondAttribute="trailing" constant="25" id="GHF-gF-24r"/>
+                            <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="CKT-Qk-XLD" secondAttribute="trailing" constant="15" id="GHF-gF-24r"/>
                             <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="q3Y-r7-zxE" secondAttribute="trailing" id="J5B-W5-Ysy"/>
                             <constraint firstItem="jtG-Hz-y86" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" constant="40" id="J9s-7D-YGe"/>
-                            <constraint firstItem="CKT-Qk-XLD" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" constant="25" id="LMh-nk-lfh"/>
+                            <constraint firstItem="CKT-Qk-XLD" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" constant="15" id="LMh-nk-lfh"/>
                             <constraint firstItem="q3Y-r7-zxE" firstAttribute="top" secondItem="I3h-kI-99m" secondAttribute="top" id="QLo-My-DKw"/>
                             <constraint firstItem="CKT-Qk-XLD" firstAttribute="top" secondItem="q3Y-r7-zxE" secondAttribute="bottom" constant="15" id="WBn-eZ-OZD"/>
                             <constraint firstItem="k1D-SB-f4X" firstAttribute="centerY" secondItem="I3h-kI-99m" secondAttribute="centerY" multiplier="0.9" id="ayk-3W-ogt"/>
@@ -252,6 +247,7 @@
                             <constraint firstItem="k1D-SB-f4X" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" constant="25" id="ixV-eO-HPL"/>
                             <constraint firstItem="jtG-Hz-y86" firstAttribute="centerY" secondItem="I3h-kI-99m" secondAttribute="centerY" multiplier="0.95" id="jDQ-nl-5mX"/>
                             <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="jtG-Hz-y86" secondAttribute="trailing" constant="40" id="nK8-vW-yOZ"/>
+                            <constraint firstItem="GZL-P3-wR4" firstAttribute="leading" secondItem="I3h-kI-99m" secondAttribute="leading" constant="154" id="qfG-Qa-Cw8"/>
                             <constraint firstItem="PRb-EK-ugn" firstAttribute="centerY" secondItem="I3h-kI-99m" secondAttribute="centerY" multiplier="0.95" id="r9g-AK-8n1"/>
                             <constraint firstItem="I3h-kI-99m" firstAttribute="trailing" secondItem="PRb-EK-ugn" secondAttribute="trailing" constant="60" id="zps-VC-xCi"/>
                         </constraints>
@@ -267,7 +263,6 @@
                         <outletCollection property="singleButtons" destination="nMw-ng-0VA" collectionClass="NSMutableArray" id="KC9-jI-axR"/>
                         <outletCollection property="singleButtons" destination="Lrb-NS-CIM" collectionClass="NSMutableArray" id="yWY-ti-ROY"/>
                         <outletCollection property="singleButtons" destination="7Hi-KV-2ei" collectionClass="NSMutableArray" id="1SK-T5-d6I"/>
-                        <outletCollection property="singleButtons" destination="IHE-8L-OCM" collectionClass="NSMutableArray" id="iQT-wM-QXA"/>
                         <outletCollection property="rangedLabels" destination="azk-BM-h0c" collectionClass="NSMutableArray" id="n6R-se-WsG"/>
                         <outletCollection property="rangedLabels" destination="y2p-8w-gio" collectionClass="NSMutableArray" id="ju0-G7-gD6"/>
                         <outletCollection property="multipleSwitch" destination="7BU-lh-s9C" collectionClass="NSMutableArray" id="XNd-V7-Ibv"/>
@@ -289,17 +284,17 @@
             <objects>
                 <viewController id="VjX-lj-AgC" customClass="ResultVC" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NhG-JH-J8W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="148-Sl-b9d">
-                                <rect key="frame" x="25" y="256.5" width="325" height="21"/>
+                                <rect key="frame" x="25" y="356.66666666666669" width="325" height="21"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-lz-ped">
-                                <rect key="frame" x="130" y="190.5" width="115" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-lz-ped">
+                                <rect key="frame" x="130" y="284.33333333333331" width="115" height="26"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -311,12 +306,12 @@
                             <constraint firstItem="Py0-BU-LcP" firstAttribute="trailing" secondItem="148-Sl-b9d" secondAttribute="trailing" constant="25" id="3Z2-xz-OhN"/>
                             <constraint firstItem="Qbe-lz-ped" firstAttribute="centerX" secondItem="Py0-BU-LcP" secondAttribute="centerX" id="5tA-tx-QJa"/>
                             <constraint firstItem="148-Sl-b9d" firstAttribute="leading" secondItem="Py0-BU-LcP" secondAttribute="leading" constant="25" id="K4p-Py-kcy"/>
-                            <constraint firstItem="148-Sl-b9d" firstAttribute="top" secondItem="Qbe-lz-ped" secondAttribute="bottom" constant="40" id="gol-pv-kzm"/>
-                            <constraint firstItem="148-Sl-b9d" firstAttribute="centerY" secondItem="Py0-BU-LcP" secondAttribute="centerY" multiplier="0.7" id="qFo-9I-txV"/>
+                            <constraint firstItem="148-Sl-b9d" firstAttribute="top" secondItem="Qbe-lz-ped" secondAttribute="bottom" multiplier="1.15" id="gol-pv-kzm"/>
+                            <constraint firstItem="148-Sl-b9d" firstAttribute="centerY" secondItem="Py0-BU-LcP" secondAttribute="centerY" multiplier="0.8" id="qFo-9I-txV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yqr-jX-Lit">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="7Fv-YV-ZZc">
+                        <barButtonItem key="rightBarButtonItem" title="Again!" style="done" id="7Fv-YV-ZZc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="u9X-RA-zle" kind="unwind" unwindAction="unwindWithSegue:" id="iz3-YF-Nls"/>
@@ -340,7 +335,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="AJ0-c4-FfZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5Ji-dL-R6a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
