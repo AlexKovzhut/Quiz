@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,28 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ1-U4-SZd">
-                                <rect key="frame" x="137" y="350.33333333333331" width="101" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Start Quiz!"/>
+                                <rect key="frame" x="130.66666666666666" y="349" width="114" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start Quiz!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="1yq-5g-DpE" kind="presentation" modalPresentationStyle="fullScreen" id="6Wn-ZK-tHx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which superhero are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-ni-BDv">
-                                <rect key="frame" x="106" y="281.33333333333331" width="163" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="100" y="272.66666666666669" width="175" height="31.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NZ1-U4-SZd" firstAttribute="top" secondItem="B9f-ni-BDv" secondAttribute="bottom" constant="45" id="b8U-z6-GlR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9f-ni-BDv" secondAttribute="trailing" constant="106" id="dMN-1C-KAB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B9f-ni-BDv" secondAttribute="trailing" constant="100" id="dMN-1C-KAB"/>
                             <constraint firstItem="NZ1-U4-SZd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rFJ-Q3-8Sp"/>
                             <constraint firstItem="NZ1-U4-SZd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.9" id="shq-gQ-Zgc"/>
-                            <constraint firstItem="B9f-ni-BDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="yxm-FL-w0T"/>
+                            <constraint firstItem="B9f-ni-BDv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="yxm-FL-w0T"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -66,11 +67,11 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-SB-f4X">
-                                <rect key="frame" x="25" y="334" width="325" height="158"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="k1D-SB-f4X">
+                                <rect key="frame" x="25" y="309" width="325" height="208"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMw-ng-0VA" userLabel="Question">
-                                        <rect key="frame" x="119" y="0.0" width="87" height="36"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nMw-ng-0VA" userLabel="Question">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,8 +80,8 @@
                                             <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="P7p-ZG-i9o"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrb-NS-CIM" userLabel="Question">
-                                        <rect key="frame" x="119" y="61" width="87" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Lrb-NS-CIM" userLabel="Question">
+                                        <rect key="frame" x="0.0" y="86" width="325" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -89,8 +90,8 @@
                                             <action selector="singleAnswerButtonPressed:" destination="RpN-Ty-qCw" eventType="touchUpInside" id="x7q-YF-de8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-KV-2ei" userLabel="Question">
-                                        <rect key="frame" x="119" y="122" width="87" height="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-KV-2ei" userLabel="Question">
+                                        <rect key="frame" x="0.0" y="172" width="325" height="36"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Question">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,15 +190,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="217" translatesAutoresizingMaskIntoConstraints="NO" id="Lg0-4G-Qrp">
                                         <rect key="frame" x="0.0" y="36" width="295" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="azk-BM-h0c" userLabel="Question">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azk-BM-h0c" userLabel="Question">
                                                 <rect key="frame" x="0.0" y="0.0" width="39" height="31"/>
-                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="8"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y2p-8w-gio" userLabel="Question">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="y2p-8w-gio" userLabel="Question">
                                                 <rect key="frame" x="256" y="0.0" width="39" height="31"/>
-                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="8"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -220,7 +221,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="SIK-eo-C3h"/>
                                 </constraints>
-                                <state key="normal" title=" Переход">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -357,9 +358,4 @@
             <point key="canvasLocation" x="408.80000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
