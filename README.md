@@ -1,5 +1,4 @@
 # Quiz
 Quiz app
 
-Just Quiz game
-Used Storyboards
+Just Quiz game, used Storyboards
